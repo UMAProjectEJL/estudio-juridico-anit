@@ -5,7 +5,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const account = 'UMAProjectEJL';
-const repository = 'violeta-anit-portfolio';
+const repository = 'estudio-juridico-anit';
 const basePath = `/${repository}`;
 const siteUrl = `https://${account.toLowerCase()}.github.io/${repository}`;
 const projectRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -36,6 +36,7 @@ if (!fs.existsSync(path.join(outputDirectory, 'index.html'))) {
 const deploymentDirectory = fs.mkdtempSync(path.join(os.tmpdir(), 'portfolio-anit-pages-'));
 try {
   fs.cpSync(outputDirectory, deploymentDirectory, { recursive: true });
+  fs.writeFileSync(path.join(deploymentDirectory, '.nojekyll'), '');
   run('git', ['init', '--initial-branch=gh-pages', deploymentDirectory]);
   run('git', ['-C', deploymentDirectory, 'add', '-A']);
   run('git', ['-C', deploymentDirectory, 'commit', '-m', 'Publish static portfolio']);

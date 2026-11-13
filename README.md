@@ -19,7 +19,7 @@ npm run build
 
 ## Antes de publicar
 
-- La publicación gratuita usa GitHub Pages. En el plan gratuito, el repositorio debe ser público.
+- La publicación gratuita usa GitHub Pages en `https://umaprojectejl.github.io/estudio-juridico-anit/`. En el plan gratuito, el repositorio debe ser público.
 - Para publicar o actualizar el sitio, ejecutá `npm run deploy`. Git debe estar autenticado para enviar la rama `gh-pages`.
 - El script define el prefijo de ruta y el dominio GitHub Pages para canonical, Open Graph, `robots.txt` y sitemap.
 - Conectar un servicio de recepción para el formulario. Actualmente valida los campos en el navegador e incorpora un campo trampa antispam, pero no transmite ni guarda datos. El aviso lo explica y ofrece WhatsApp como alternativa.
