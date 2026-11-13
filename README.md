@@ -22,6 +22,7 @@ npm run build
 - La publicación gratuita usa GitHub Pages en `https://umaprojectejl.github.io/estudio-juridico-anit/`. En el plan gratuito, el repositorio debe ser público.
 - Para publicar o actualizar el sitio, ejecutá `npm run deploy`. Git debe estar autenticado para enviar la rama `gh-pages`.
 - El script define el prefijo de ruta y el dominio GitHub Pages para canonical, Open Graph, `robots.txt` y sitemap.
+- Para verificar el sitio en Google Search Console, definí `GOOGLE_SITE_VERIFICATION` con el valor de contenido de la metaetiqueta que Google entrega y luego ejecutá `npm run deploy`. El campo vacío no agrega ninguna etiqueta.
 - Conectar un servicio de recepción para el formulario. Actualmente valida los campos en el navegador e incorpora un campo trampa antispam, pero no transmite ni guarda datos. El aviso lo explica y ofrece WhatsApp como alternativa.
 - Revisar el texto institucional y las áreas de práctica con la profesional antes de publicar.
 - Si se desea, añadir una fotografía profesional autorizada de la abogada y datos públicos adicionales que ella confirme. No se incluyeron domicilio, correo ni credenciales no proporcionadas.
