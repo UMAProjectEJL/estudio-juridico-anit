@@ -135,7 +135,7 @@ export default function Home() {
       </section>
     </main>
 
-    <footer className="site-footer"><a className="brand footer-brand" href="#inicio"><span className="brand-mark">VA</span><span className="brand-copy"><strong>Violeta Anit</strong><small>ESTUDIO JURÍDICO</small></span></a><p>Asesoramiento y representación jurídica<br />CABA · Provincia de Buenos Aires</p><a className="footer-whatsapp" href={whatsapp} target="_blank" rel="noreferrer">WhatsApp <Arrow /></a><div className="footer-bottom"><span>© {new Date().getFullYear()} Dra. Violeta de las Mercedes Anit</span><a href="#inicio">Volver arriba <ArrowUp /></a><span className="developer-credit">Desarrollado por Elías Cornejo</span><span>La información de este sitio es general y no constituye asesoramiento legal para un caso particular.</span></div></footer>
+    <footer className="site-footer"><a className="brand footer-brand" href="#inicio"><span className="brand-mark">VA</span><span className="brand-copy"><strong>Violeta Anit</strong><small>ESTUDIO JURÍDICO</small></span></a><p>Asesoramiento y representación jurídica<br />CABA · Provincia de Buenos Aires</p><a className="footer-whatsapp" href={whatsapp} target="_blank" rel="noreferrer">WhatsApp <Arrow /></a><div className="footer-bottom"><span>© {new Date().getFullYear()} Dra. Violeta de las Mercedes Anit</span><a href="#inicio">Volver arriba <ArrowUp /></a><span className="developer-credit">Desarrollado por Elías Saíd Cornejo</span><span>La información de este sitio es general y no constituye asesoramiento legal para un caso particular.</span></div></footer>
     <a className="floating-whatsapp" href={whatsapp} target="_blank" rel="noreferrer" aria-label="Contactar por WhatsApp"><WhatsAppIcon /><small>Escribime</small></a>
   </>;
 }
