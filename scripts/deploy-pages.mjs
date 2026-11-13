@@ -15,7 +15,7 @@ function run(command, args, options = {}) {
   const result = spawnSync(command, args, {
     cwd: projectRoot,
     stdio: 'inherit',
-    shell: process.platform === 'win32',
+    shell: command.endsWith('.cmd'),
     ...options
   });
   if (result.error) throw result.error;
@@ -28,7 +28,7 @@ const buildEnvironment = {
   NEXT_PUBLIC_SITE_URL: siteUrl
 };
 
-run('npm', ['run', 'build'], { env: buildEnvironment });
+run(process.execPath, [path.join(projectRoot, 'node_modules', 'next', 'dist', 'bin', 'next'), 'build'], { env: buildEnvironment });
 if (!fs.existsSync(path.join(outputDirectory, 'index.html'))) {
   throw new Error('La compilación no generó out/index.html.');
 }
