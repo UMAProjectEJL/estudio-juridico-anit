@@ -1,0 +1,4 @@
+User-Agent: *
+Allow: /
+
+Sitemap: https://umaprojectejl.github.io/estudio-juridico-anit/sitemap.xml
